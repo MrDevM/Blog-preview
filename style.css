@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+body {
+  max-width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  font-family: "Figtree", sans-serif;
+}
+main {
+  margin: auto 2rem;
+  width: 24rem;
+  background-color: var(--white);
+  padding: 20px;
+  box-shadow: 9px 9px var(--black);
+  border-radius: 15px;
+  border: 0.5px solid var(--black);
+}
+strong,
+h1 {
+  color: var(--black);
+}
+h1 {
+  font-size: 25px;
+  margin: 20px 0;
+}
+p {
+  font-size: 16px;
+  color: var(--gray);
+  line-height: 1.5rem;
+}
+main > img {
+  width: 100%;
+  border-radius: 10px;
+}
+#learn {
+  margin: 20px 0 14px;
+  display: inline-block;
+  padding: 7px 12px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+}
+span {
+  color: var(--black);
+  display: block;
+  font-size: 16px;
+}
+main div {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+}
+div img {
+  width: 2.79rem;
+}
+div strong {
+  margin-left: 1rem;
+}
+h1:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+main:has(h1:hover) {
+  box-shadow: 15px 15px var(--black);
+}
